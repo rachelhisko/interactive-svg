@@ -1,29 +1,39 @@
 #left-eye {
   transform: translateX(0);
-  animation: left-eye 3s ease infinite alternate;
+  animation: eyes 3s linear infinite;
 }
 
 #right-eye {
   transform: translateX(0);
-  animation: right-eye 3s ease infinite alternate;
+  animation: eyes 3s linear infinite;
 }
 
-@keyframes left-eye {
+@keyframes eyes {
   0% {
     transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-25px);
+  25% {
+    transform: translateX(10px);
   }
-}
 
-@keyframes right-eye {
-  0% {
+  50% {
     transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-25px);
+  75% {
+    transform: translateX(-10px);
   }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#bear:hover left-ear {
+  transition:
+}
+
+#bear:hover right-ear {
+
 }
