@@ -30,10 +30,12 @@
   }
 }
 
-#bear:hover left-ear {
-  transition:
+#bear:hover #left-ear {
+  transform: translateY(-10px);
+  transition: all .5s linear;
 }
 
-#bear:hover right-ear {
-
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+  transition: all .5s linear;
 }
